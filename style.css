@@ -89,3 +89,8 @@ h2 {
 p{
     float: right
 }
+
+.login {
+    padding: 10%;
+    padding-left: 40%;
+}
