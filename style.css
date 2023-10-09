@@ -18,7 +18,6 @@ body {
 }
 header {
     background-color: #eee;
-    color: #555555;
     border: grey;
     text-align: center;
     margin: 5px 0 0 0;
@@ -33,8 +32,8 @@ footer{
 
 }
 nav {
-    background-color: #555;
-    color: #eee;
+    background-color: #37702c;
+    color: #ffffff;
     border: grey;
     text-align: center;
     margin: 5px 0 0 0;
@@ -100,4 +99,7 @@ p{
 .login {
     padding: 10%;
     padding-left: 40%;
+}
+.home {
+    color: #37702c;
 }
