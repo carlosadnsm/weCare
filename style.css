@@ -25,16 +25,17 @@ header {
     display: block;
 }
 footer{ 
+    background-color: #d3c9c9d5;
     color: #000000;
     border: grey;
     text-align: center;
     padding: 0.1rem;
 
-}
+} 
 nav {
     background-color: #37702c;
     color: #ffffff;
-    border: grey;
+    border: rgb(177, 177, 177);
     text-align: center;
     margin: 5px 0 0 0;
     padding: 0.5rem;
@@ -58,6 +59,19 @@ nav a {
     color: rgb(207, 207, 207);
     text-decoration: none;
     padding: 0 3rem;
+}
+.textQuestions{
+    padding-top: 10px;
+    display: flex;
+}
+.textQuestions li{
+    padding: 1px;
+}
+
+
+.text-fluid{
+    font-size: larger;
+    font-weight: bold;
 }
 
 
