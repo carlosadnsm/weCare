@@ -31,27 +31,37 @@
                 <li><a href="index.html">Home</a></li>
                 <li><a href="itens.html">Itens</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
-                <li><a href="cadastrolivro.html">Cadastro</a></li>
+                <li><a href="cadastro.html">Cadastro</a></li>
     
             </ul>
         </nav>
-        <div class="login">
-            <form>
-                <fieldset">Login</fieldset>
-                <div class="form-floating mb-3 col-5">
-                    <input type="text" class="form-control" name="email" id="email" placeholder="">
-                    <label for="email">E-mail</label>
+        <nav style="background-color: white;">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-7 login-container"></div>
+                    <div class="col-md-5">
+                        <div class="login-form">
+                            <form>
+                                <fieldset" style="color: green;">Login</fieldset>
+                                <div class="form-floating mb-3 ">
+                                    <input type="text" class="form-control" name="email" id="email" placeholder="">
+                                    <label for="email" style="color: green;">E-mail</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control" name="password" id="password" placeholder="">
+                                    <label for="password" style="color: green;">Senha</label>
+                                </div>                    
+                                <button type="submit" id="login"  class="btn btn-success col-5">Entrar</button>
+                                <div>
+                                    <a class="text-allign" href="cadastro.html" style="color: green;">Não possui cadastro?</a>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
                 </div>
-                <div class="form-floating mb-3 col-5">
-                    <input type="password" class="form-control" name="password" id="password" placeholder="">
-                    <label for="password">Senha</label>
-                </div>                    
-                <button type="submit" id="login"  class="btn btn-success col-5">Entrar</button>
-                <div class="form-floating mb-3 col-5">
-                    <a class="text-allign" href="cadastro.html">Não possui cadastro?</a>
-                </div>
-            </form>
-        </div>
+            </div>
+        </nav>
+        
         <footer class="fixed-bottom">
             Todos os direitos reservados 2023
         </footer>

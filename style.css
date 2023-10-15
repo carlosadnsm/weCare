@@ -117,3 +117,17 @@ p{
 .home {
     color: #37702c;
 }
+
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: url('images/login.jpg') center / cover no-repeat;
+}
+
+.login-form {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 5px;
+}
