@@ -22,7 +22,7 @@
 
             <form class="d-flex mx-auto">
                 <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" id="pesq">
-                <button class="btn btn-outline-success search-btn" type="submit" id="search-btn" onclick="buscar()">Pesquisar</button>
+                <button class="btn btn-outline-success search-btn" type="submit" id="search-btn" onclick="buscar(event)">Pesquisar</button>
             </form>
 
             <div class="navbar-nav ms-auto">
@@ -42,7 +42,7 @@
 
 
     <main>
-        <div class = "item">
+        <div class = "item" id = "item">
             <img src="images/produto1.jpeg" alt="Produto" style="max-width: 200px; height: auto;">
             <div style="margin-left: 20px;">
               <h2 class="tituloProduto">Relógio Class Basic</h2>
@@ -53,7 +53,7 @@
             </div>
           </div>
 
-          <div class = "item">
+          <div class = "item" id = "item">
             <img src="images/produto2.jpeg" alt="Produto" style="max-width: 200px; height: auto;">
             <div style="margin-left: 20px;">
               <h2>Relógio Ultra Performance</h2>
@@ -64,7 +64,7 @@
             </div>
           </div>
 
-          <div class = "item">
+          <div class = "item" id = "item">
             <img src="images/produto3.jpeg" alt="Produto" style="max-width: 200px; height: auto;">
             <div style="margin-left: 20px;">
               <h2>Relógio Ultra Performance 2.0</h2>
@@ -75,7 +75,7 @@
             </div>
           </div>
 
-          <div class = "item">
+          <div class = "item" id = "item" >
             <img src="images/produto4.jpeg" alt="Produto" style="max-width: 200px; height: auto;">
             <div style="margin-left: 20px;">
               <h2>Relógio Slim Contrast</h2>

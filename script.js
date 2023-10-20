@@ -35,44 +35,49 @@ createPopper(popcorn, tooltip, {
 });*/
 
 
-// function alterarClasseItem() {
-//     var mediaQuery = window.matchMedia('(max-width: 600px)');
+function alterarClasseItem() {
+    var mediaQuery = window.matchMedia('(max-width: 600px)');
 
-//     var elemento = document.getElementById('item');
+    function verificarAlteracao(e) {
+        var elementos = Array.from(document.getElementsByClassName('item'));
 
-//     function verificarAlteracao(e) {
-//         if (e.matches) {
-//             elemento.classList.add('container');
-//             elemento.classList.remove('item');
+        for (var i = 0; i < elementos.length; i++) {
+            if (e.matches) {
+                elementos[i].classList.add('container');
+                elementos[i].classList.remove('item');
+            } else {
+                elementos[i].classList.add('item');
+                elementos[i].classList.remove('container');
+            }
+        }
+    }
 
-//         } else {
-//             elemento.classList.add('item');
-//             elemento.classList.remove('container');
-//         }
-//     }
+    mediaQuery.addEventListener('change', function(e) {
+        verificarAlteracao(e);
+    });
 
-//     verificarAlteracao(mediaQuery);
+    verificarAlteracao(mediaQuery);
+}
 
-//     mediaQuery.addEventListener(verificarAlteracao);
-// }
+window.onload = alterarClasseItem;
 
-// alterarClasseItem();
 
 
 
 //class = "d-none"
 
-buscar = function () {
-
-let parametro = document.getElementById('pesq').value; 
-
-document.querySelectorAll('div.item h2').forEach((h2) => {
-  if (h2.textContent.includes(parametro)) {
-    h2.parentElement.style.display = 'block';
-  } else {
-    h2.parentElement.classList.add('d-none');
+buscar = function (event) {
+    event.preventDefault(); // Isso impede que a página seja recarregada
+  
+    let parametro = document.getElementById('pesq').value; 
+  
+    document.querySelectorAll('div.item h2').forEach((h2) => {
+      if (h2.textContent.includes(parametro)) {
+        // Se o parâmetro estiver contido no h2, exiba o item
+        h2.closest('.item').style.display = 'block';
+      } else {
+        // Se o parâmetro não estiver contido no h2, adicione a classe 'd-none' para não exibir o item
+        h2.closest('.item').classList.add('d-none');
+      }
+    });
   }
-});
-
-
-}
