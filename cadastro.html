@@ -48,7 +48,7 @@
     </nav>
         <div class="container mt-5">
             <h1 class="mb-4">Cadastro</h1>
-            <form  name="livro" id="livro">
+            <form  method="post" action="scripts/scriptbase.php">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome:</label>
                     <input type="text" class="form-control" id="nome" name="nome" maxlength="100">
@@ -97,9 +97,9 @@
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary" id="botao">Enviar</button>
                 </div>
-                <div class="alert alert-danger" role="alert" name="alerta" id="alerta" style="visibility: hidden;"  >
+                <!-- <div class="alert alert-danger" role="alert" name="alerta" id="alerta" style="visibility: hidden;"  >
                     Um simples alerta danger. Olha só!
-                  </div>
+                  </div> -->
             </form>
     </main>
     <footer class="fixed-bottom">

@@ -1,15 +1,16 @@
 <?php
 session_start();
-
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-
     function recovery_path_file($file){
+        echo 'esta aqui 2';
 
         $target_dir = 'uploads/';
         // Define o caminho completo do arquivo
         $target_file = $target_dir . basename($_FILES['image']['name']);
         // Move o arquivo para o diretório de destino
         if (move_uploaded_file($_FILES['image']['tmp_name'], $target_file)) {
+            echo 'esta aqui 3';
+
           // Define o caminho do arquivo para salvar no banco de dados
           $image_path = $target_file;
     
@@ -21,11 +22,16 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     }
 
+    echo'esta aqui 99';
+
     if (
         isset($_POST["nome"]) && isset($_POST["email"]) && isset($_POST["dataNascimento"])
         && isset($_POST["celular"]) && isset($_POST["documento"]) && isset($_POST["genero"])
         && isset($_POST["foto"]) && isset($_POST["senha"])
     ) {
+
+        echo 'esta aqui 4';
+
         require_once "./utils/connection.php";
         require_once "../models/customer.php";
 
@@ -48,20 +54,21 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $stmt->bindParam(8, $password_hashed);
 
         $resultado = $stmt->execute();
+        echo 'esta aqui 5';
 
         if ($stmt->rowCount() == 1) {
 
-            $usuario = new Customer();
+            $customer = new Customer();
 
             while ($rs = $stmt->fetch(PDO::FETCH_OBJ)) {
-                $usuario->setName($rs->nome);
-                $usuario->setEmail($rs->email);
-                $usuario->setDate($rs->dataNascimento);
-                $usuario->setPhone($rs->telefone);
-                $usuario->setDocument($rs->documento);
-                $usuario->setGender($rs->genero);
-                $usuario->setPassword_hashed($rs->senha);
-                $usuario->setImage_path($rs->imagem);
+                $customer->setName($rs->nome);
+                $customer->setEmail($rs->email);
+                $customer->setDate($rs->dataNascimento);
+                $customer->setPhone($rs->telefone);
+                $customer->setDocument($rs->documento);
+                $customer->setGender($rs->genero);
+                $customer->setPassword_hashed($rs->senha);
+                $customer->setImage_path($rs->imagem);
             }
 
             $_SESSION["nome"] = $_POST["nome"];
