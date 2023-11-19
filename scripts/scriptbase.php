@@ -73,7 +73,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
             $_SESSION["nome"] = $_POST["nome"];
 
-            header("Location: cadastro.html");
+            header("Location: cadastro.php");
         } else {
             echo "Usuário ou senha inválidos";
         }

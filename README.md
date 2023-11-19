@@ -3,4 +3,4 @@ Projeto para a disciplina Programação para Internet que consiste em um site de
 
 Primeira versão iniciada em 28/09/2023
 
-http://wecare2023.infinityfreeapp.com/index.html
+http://wecare2023.infinityfreeapp.com/index.php

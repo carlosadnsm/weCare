@@ -24,7 +24,7 @@
   <header>
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container">
-        <a class="navbar-brand" href="../index.html">weCare</a>
+        <a class="navbar-brand" href="../index.php">weCare</a>
 
         <form class="d-flex mx-auto">
           <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
@@ -33,7 +33,7 @@
 
         <div class="navbar-nav ms-auto">
 
-          <a class="nav-link" id="buttonLogin" href="../login.html">
+          <a class="nav-link" id="buttonLogin" href="../login.php">
             <button type="button" class="btn btn-outline-danger">
               <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
                 class="bi bi-box-arrow-left" viewBox="0 0 16 16">
@@ -53,9 +53,9 @@
     </nav>
     <nav>
       <ul>
-        <li><a href="profile.html">Painel Profile </a></li>
-        <li><a href="itens.html">Painel Itens</a></li>
-        <li><a href="user.html">Painel Users</a></li>
+        <li><a href="profile.php">Painel Profile </a></li>
+        <li><a href="itens.php">Painel Itens</a></li>
+        <li><a href="user.php">Painel Users</a></li>
       </ul>
     </nav>
 
