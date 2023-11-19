@@ -17,21 +17,17 @@ body {
     font-size: 4rem;
 }
 header {
-    background-color: #eee;
     border: grey;
     text-align: center;
-    margin: 5px 0 0 0;
-    padding: 0.5rem 0;
     display: block;
 }
-footer{ 
+footer {
     background-color: #d3c9c9d5;
     color: #000000;
     border: grey;
     text-align: center;
-    padding: 0.1rem;
-
-} 
+  }
+  
 nav {
     background-color: #37702c;
     color: #ffffff;
