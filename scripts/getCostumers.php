@@ -5,7 +5,7 @@
     $pdo = mysqlConnect();
 
     try {
-        $sql = "SELECT * FROM cadastro";
+        $sql = "SELECT * FROM customer";
     
     $result = $pdo->query($sql);
     } catch (Exception $e) {
