@@ -10,9 +10,15 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const confirmDeleteButton = document.getElementById('confirmDelete');
     confirmDeleteButton.addEventListener('click', function() {
-    // Aqui você pode colocar a lógica para executar a exclusão
-    // Por exemplo: fazer uma chamada AJAX para excluir um item do banco de dados
-    // Depois de confirmado, você pode fechar o modal
+        
+        fetch(`deleteCostumer.php`)
+            .then(response => {
+                console.log('Item deletado com sucesso');
+            })
+            .catch(error => {
+                console.error('Ocorreu um erro:', error);
+            });
+
     confirmationModal.hide();
     });
 });

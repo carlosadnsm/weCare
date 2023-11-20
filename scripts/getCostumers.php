@@ -31,7 +31,7 @@ try {
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
-    <script src="../script.js"></script>
+    <script src="getCostumers.js"></script>
 
 </head>
 
@@ -106,10 +106,11 @@ try {
                 while ($row = $result->fetch()) {
 
                     $nome = $row['CUSTOMER_NAME'];
-
+                    $documento = $row['CUSTOMER_DOCUMENT'];
+                    $_SESSION['documento'] = $row['CUSTOMER_DOCUMENT'];
 
                     echo <<<HTML
-                                   <li class="list-group-item list-group-item-action"> $nome
+                                   <li class="list-group-item list-group-item-action"> $nome - $documento
                                         <button type="button" class="btn btn-outline-danger deleteButton">
                                             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-trash"
                                             viewBox="0 0 16 16">
