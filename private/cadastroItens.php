@@ -47,7 +47,7 @@
     </nav>
         <div class="container mt-5">
             <h1 class="mb-4">Cadastro de Item</h1>
-            <form  method="post" action="scripts/cadastro.php" method="post">
+            <form  method="post" action="scripts/cadastroItens.php" method="post">
                 <div class="mb-3">
                     <label for="nome" class="form-label">Nome:</label>
                     <input type="text" class="form-control" id="nome" name="nome" maxlength="100">
