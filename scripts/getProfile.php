@@ -11,9 +11,9 @@ try {
   $sql = "SELECT * FROM CUSTOMER WHERE CUSTOMER_ID = :id ";
   $stmt = $pdo->prepare($sql);
 
-  $stmt->bindParam(':id', $customerID);
+  $stmt->bindParam(':id', $customerID, PDO::PARAM_INT);
 
-  $result = $stmt->fetch();
+  $stmt->execute();
 } catch (Exception $e) {
   exit('Ocorreu uma falha: ' . $e->getMessage());
 }
@@ -93,15 +93,14 @@ try {
         <h1 class="fw-light">Perfil</h1>
 
         <div class="d-flex justify-content-between">
+          <div class="col-lg">
 
-          <?php
-
-          while ($row = $result->fetch()) {
-
-            $nome = $row['CUSTOMER_NUMBER'];
-
-            echo <<<HTML
-                    <div class="col-lg">
+            <?php
+          
+              while ($result = $stmt->fetch(PDO::FETCH_ASSOC)) {
+                $nome[] = $result['CUSTOMER_NAME'];  
+          
+              echo <<<HTML
 
                       <img src="../images/no-picture-profile.jpeg" alt="Foto de Perfil" width="300px">
 
@@ -109,17 +108,17 @@ try {
                         <h3 class="text-center">Painel de Controle</h3>
                       </div>
 
-                      <h5 class="text-fluid"> Usuario Teste da Silva </h5>
+                      <h5 class="text-fluid"> $nome[0] </h5>
 
                       <div class="btn-group">
                         <button type="button" class="btn btn-sm btn-outline-danger" name="exclude-profile">Excluir Perfil</button>
                         <button type="button" class="btn btn-sm btn-outline-primary" name="edit-picture">Editar Foto</button>
                       </div>
 
-                    </div>
                   HTML;
-          }
-          ?>
+            }
+            ?>
+          </div>
 
         </div>
 

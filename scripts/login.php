@@ -3,39 +3,43 @@ session_start();
 
 if (isset($_POST["email"]) && $_POST["senha"]) {
 
-    $email = $_POST["email"];
-    $password = $_POST["email"];
-
-    $senha = password_hash($password, PASSWORD_DEFAULT);
-
-
     require "utils/connection.php";
+
+    $email = $_POST["email"];
+    $password = $_POST["senha"];
+
 
     $pdo = mysqlConnect();
 
     try {
-        $sql = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE CUSTOMER_EMAIL = :email AND PASSWORD_HASH = :senha";
+        $sql = "SELECT CUSTOMER_ID FROM CUSTOMER WHERE CUSTOMER_EMAIL = :email ";
 
         $stmt = $pdo->prepare($sql);
-        $stmt->bindParam(':email', $nome);
-        $stmt->bindParam(':senha', $senha);
+        $stmt->bindParam(':email', $email);
 
         $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        if ($result) {
+                
+            $_SESSION["email"] = $result["CUSTOMER_EMAIL"];
+            $_SESSION["senha"] = $result["PASSWORD_HASH"];
+            $_SESSION["customer_id"] = $result['CUSTOMER_ID'];
+            
+            echo $_SESSION["email"] ."" . $_SESSION["senha"] . "" . $_SESSION["customer_id"];
 
 
-        if ($userID = $stmt->fetch()) {
-            echo <<<HTML
-        <h1> <b>SENHA INCORRETA!! REDIRECIONANDO EM 3 SEGUNDOS</b></h1> 
-        HTML;
-            sleep(3);
-            header("Location: ../cadastro.php");
+            header("Location: ../scripts/getProfile.php");
 
         } else {
-            $_SESSION["email"] = $_POST["email"];
-            $_SESSION["senha"] = $_POST["senha"];
-            $_SESSION["customer_id"] = $userID;
 
-            header("Location: ../private/profile.php");
+            echo <<<HTML
+            <h1> <b>USUARIO INCORRETO!! REDIRECIONANDO EM 3 SEGUNDOS</b></h1> 
+            HTML;
+              
+                header("Location: ../login.php");
+
+          
 
         }
 

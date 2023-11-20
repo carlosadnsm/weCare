@@ -32,6 +32,8 @@
         $stmt->execute();
 
         echo "Dados inseridos com sucesso!";
+
+        header("Location: ../login.php");
     
     } catch (Exception $e) {
         exit('Ocorreu uma falha: ' . $e->getMessage());
