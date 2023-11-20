@@ -2,10 +2,10 @@
 
 function mysqlConnect()
 {
-    $host = 'sql304.infinityfree.com';
-    $usuario = 'if0_35231810';
-    $senha = '1QYDuHZnpllnF';
-    $banco = 'if0_35231810_Wecare';
+    $host = 'sql205.infinityfree.com';
+    $usuario = 'if0_35439306';
+    $senha = 'PANwoVJKDVUJzz';
+    $banco = 'if0_35439306_ppi';
 
     $dsn = "mysql:host=$host;dbname=$banco;charset=utf8mb4";
 

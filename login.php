@@ -14,7 +14,7 @@
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container">
-                <a class="navbar-brand" href="index.html">weCare</a>
+                <a class="navbar-brand" href="index.php">weCare</a>
     
                 <form class="d-flex mx-auto">
                     <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar">
@@ -22,7 +22,7 @@
                 </form>
     
                 <div class="navbar-nav ms-auto">
-                    <a class="nav-link" href="login.html"><i class="bi bi-person"></i> Login</a>
+                    <a class="nav-link" href="login.php"><i class="bi bi-person"></i> Login</a>
                 </div>
             </div>
         </nav>
@@ -53,7 +53,7 @@
                                 </div>                    
                                 <button type="submit" id="login" class="btn btn-success col-5">Entrar</button>
                                 <div>
-                                    <a class="text-allign" href="cadastro.html" style="color: green;">Não possui cadastro?</a>
+                                    <a class="text-allign" href="cadastro.php" style="color: green;">Não possui cadastro?</a>
                                 </div>
                             </form>
                         </div>
