@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>weCare</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../style.css">
 
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -35,10 +35,11 @@
     </nav>
     <nav>
       <ul>
-        <li><a href="index.php">Home</a></li>
-        <li><a href="itens.php">Itens</a></li>
-        <li><a href="sobre.php">Sobre</a></li>
-        <li><a href="cadastro.php">Cadastro</a></li>
+      <li><a href="../scripts/getCostumers.php">Usuarios</a></li>
+            <li><a href="../scripts/getProducts.php">Itens</a></li>
+            <li><a href="profile.php">Perfil</a></li>
+            <li><a href="cadastro.php">Cadastro de Item</a></li>
+
       </ul>
     </nav>
   </header>

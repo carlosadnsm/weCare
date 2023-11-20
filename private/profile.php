@@ -53,9 +53,10 @@
     </nav>
     <nav>
       <ul>
-        <li><a href="profile.php">Painel Profile </a></li>
-        <li><a href="itens.php">Painel Itens</a></li>
-        <li><a href="user.php">Painel Users</a></li>
+        <li><a href="../scripts/getCostumers.php">Usuarios</a></li>
+        <li><a href="../scripts/getProducts.php">Itens</a></li>
+        <li><a href="profile.php">Perfil</a></li>
+        <li><a href="cadastro.php">Cadastro de Item</a></li>
       </ul>
     </nav>
 
