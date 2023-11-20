@@ -49,6 +49,7 @@
               <p>O modelo class basic contamos com uma pulseira de silicone mais fina que os demais, e seu diferencial é sua leveza e casualidade, cabendo em ocasiões diversas do dia a dia como uma academia, trabalho, passeio etc.</p>
             </div>
             <div style="margin-right: 20px;">
+            <button class="btn btn-success" type="submit" id="comprar">Comprar</button>
               
               <p>R$ 499,99</p>
             </div>
@@ -88,6 +89,8 @@
               <p>O modelo Slim Contrast é ideal pra você que gosta de mudar sempre, além de todas as funcionalidades padrões de nossos relógios, este modelo vem com 2 pares de pulseira extra, da cor de sua escolha (consulte disponibilidade de cores antes da compra)</p>
             </div>
             <div style="margin-right: 20px;">
+            <button class="btn btn-success" type="submit" id="comprar">Comprar</button>
+
               <p>R$ 599,99</p>
             </div>
           </div>

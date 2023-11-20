@@ -77,6 +77,7 @@ try {
                             <p>$descricao</p>
                             </div>
                             <div style="margin-right: 20px;">
+                            <button class="btn btn-success" type="submit" id="comprar">Comprar</button>
                             <p>$preco</p>
                             </div>
                         </div>
