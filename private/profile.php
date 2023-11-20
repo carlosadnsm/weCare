@@ -129,7 +129,7 @@ try {
   </main>
 
   <footer class="fixed-bottom">
-    <address>Todos os direitos reservados <cite>weCare</cite> 2023 </address>
+    Todos os direitos reservados <cite>weCare</cite> 2023 
   </footer>
 </body>
 

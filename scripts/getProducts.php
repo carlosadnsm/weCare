@@ -22,7 +22,7 @@ try {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>weCare</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../style.css">
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
@@ -34,7 +34,7 @@ try {
 
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
-            <a class="navbar-brand" href="index.html">weCare</a>
+            <a class="navbar-brand" href="index.php">weCare</a>
 
             <form class="d-flex mx-auto">
                 <input class="form-control me-2" type="search" placeholder="Pesquisar" aria-label="Pesquisar" id="pesq">
@@ -42,16 +42,16 @@ try {
             </form>
 
             <div class="navbar-nav ms-auto">
-                <a class="nav-link" href="login.html"><i class="bi bi-person"></i> Login</a>
+                <a class="nav-link" href="login.php"><i class="bi bi-person"></i> Login</a>
             </div>
         </div>
     </nav>
     <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="itens.html">Itens</a></li>
-            <li><a href="sobre.html">Sobre</a></li>
-            <li><a href="cadastro.html">Cadastro</a></li>
+            <li><a href="index.php">Home</a></li>
+            <li><a href="itens.php">Itens</a></li>
+            <li><a href="sobre.php">Sobre</a></li>
+            <li><a href="cadastro.php">Cadastro</a></li>
 
         </ul>
     </nav>
@@ -89,7 +89,7 @@ try {
     </main>
 </body>
 <footer class="fixed-bottom">
-    <address>Todos os direitos reservados <cite>weCare</cite> 2023 </address>
+    Todos os direitos reservados <cite>weCare</cite> 2023 
 </footer>
 
 </html>
