@@ -53,29 +53,20 @@
                     <input type="text" class="form-control" id="nome" name="nome" maxlength="100">
                 </div>
                 <div class="mb-3">
-                    <label for="email" class="form-label">Email:</label>
-                    <input type="text" class="form-control" id="email" name="email" maxlength="100">
+                    <label for="email" class="form-label">Preço:</label>
+                    <input type="text" class="form-control" id="preco" name="preco" maxlength="100">
                 </div>
                 <div class="mb-3">
-                    <label for="dataNascimento" class="form-label">Data de Nascimento:</label>
-                    <input type="date" class="form-control" id="dataNascimento" name = "dataNascimento" >
+                    <label for="email" class="form-label">Descricao:</label>
+                    <input type="text" class="form-control" id="descricao" name="descricao" maxlength="100">
                 </div>
                 <div class="mb-3">
                     <label for="foto" class="form-label">Foto:</label>
                     <input type="file" class="form-control" id="foto" name="foto">
                 </div>
-
-                <div class="mb-3">
-                    <label for="senha" class="form-label">Senha:</label>
-                    <input type="password" class="form-control" id="senha" name="senha" maxlength="100">
-                </div>
-
                 <div class="mb-3">
                     <button type="submit" class="btn btn-primary" id="botao">Enviar</button>
                 </div>
-                <!-- <div class="alert alert-danger" role="alert" name="alerta" id="alerta" style="visibility: hidden;"  >
-                    Um simples alerta danger. Olha só!
-                  </div> -->
             </form>
     </main>
     <footer class="fixed-bottom">
